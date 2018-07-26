@@ -10,7 +10,7 @@ import akka.Done
 import scala.collection.JavaConverters._
 import scala.concurrent.{ Await, ExecutionContext, Future, Promise }
 
-object Test03 {
+class Test03 {
   implicit val ec = ExecutionContext.fromExecutor(new ForkJoinPool(6))
 
   def main(args: Array[String]): Unit = {
