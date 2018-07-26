@@ -1,0 +1,15 @@
+*target
+*.cache
+*.classpath
+*.project
+*.settings
+*.idea
+/logs
+/sbtIvy
+/bin/
+/sbt
+/sbt.bat
+/elish.bat
+*.sbtserver*
+bin
+/sbt-launch.jar
