@@ -1,11 +1,9 @@
-import sbt._
-import sbt.Keys._
+val server = (project in file("./server"))
 
-transitiveClassifiers in ThisBuild := Seq("sources", "jar", "javadoc")
+val client = (project in file("./client"))
 
-libraryDependencies ++= Seq(
-  "com.typesafe.akka" %% "akka-http"   % "10.1.3",
-  "com.typesafe.akka" %% "akka-stream" % "2.5.12"
-)
+scalaVersion := "2.12.6"
 
-scalaVersion := "2.12.4"
+addCommandAlias("sr", "server/run")
+
+addCommandAlias("cr", "client/run")
